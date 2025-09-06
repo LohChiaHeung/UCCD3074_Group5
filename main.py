@@ -1,3 +1,8 @@
+# ############################ 
+# UI adapted/generated with LLM 
+# Features (model, data, evaluation) coded by Tan Yi Xin 
+# ############################
+
 # =============================================================================
 # Dermatology AI Assistant - Full Application
 #
@@ -17,8 +22,6 @@
 # - Results can be exported to a CSV file.
 # - Saves and loads window size and layout for a better user experience.
 #
-# Author: [Your Name/Source]
-# Version: 3.0
 # =============================================================================
 
 import torch
