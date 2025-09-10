@@ -4,7 +4,7 @@ June Trimester 2025
 Title: Deep Learning-Based Classification of Skin Diseases and Cancer
 
 Application-Based Project
-
+<br>
 <b>Group 5:</b>
 <ol>
   <li>Loh Chia Heung (Leader) 2301684 </li>
@@ -20,6 +20,6 @@ Application-Based Project
   <li>Bester Loo Man Ting: DenseNet-121 </li>
   <li>Cornelius Wong Qin Jun: Inception V3 </li>
 </ol>
-
+<br>
 Kaggle Dataset Link: <br>
 https://www.kaggle.com/datasets/kmader/skin-cancer-mnist-ham10000
