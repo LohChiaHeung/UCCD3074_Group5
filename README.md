@@ -4,7 +4,7 @@ June Trimester 2025
 Title: Deep Learning-Based Classification of Skin Diseases and Cancer
 
 Application-Based Project
-<br>
+<br><br>
 <b>Group 5:</b>
 <ol>
   <li>Loh Chia Heung (Leader) 2301684 </li>
