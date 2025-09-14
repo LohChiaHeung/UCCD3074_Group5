@@ -3,14 +3,14 @@ import os
 import shutil
 from sklearn.model_selection import train_test_split
 
-# --- STEP 1: CONFIGURE YOUR PATHS ---
+# --- STEP 1: CONFIGURE PATHS ---
 DATASET_BASE_DIR = 'ham10000_data'
 OUTPUT_TEST_DIR = 'my_test_set'
-# --- NEW: Define the output file for the labels ---
+# ---  Define the output file for the labels ---
 OUTPUT_LABELS_FILE = 'my_test_set_labels.csv'
 
 
-# --- STEP 2: THE SCRIPT LOGIC (No changes needed in this part) ---
+# --- STEP 2: THE SCRIPT LOGIC  ---
 print("Starting script...")
 METADATA_FILE = os.path.join(DATASET_BASE_DIR, 'HAM10000_metadata.csv')
 IMG_DIR_1 = os.path.join(DATASET_BASE_DIR, 'HAM10000_images_part_1')
@@ -34,7 +34,7 @@ _, test_df = train_test_split(
 )
 print(f"Identified {len(test_df)} images for the test set.")
 
-# --- Copy image files (same as before) ---
+# --- Copy image files ---
 print(f"Creating test folder at: '{os.path.abspath(OUTPUT_TEST_DIR)}'")
 os.makedirs(OUTPUT_TEST_DIR, exist_ok=True)
 copied_count = 0
@@ -46,13 +46,13 @@ for index, row in test_df.iterrows():
 print(f"Copied {copied_count} images to the '{OUTPUT_TEST_DIR}' folder.")
 
 
-# --- STEP 3: NEW - SAVE THE LABELS FOR THE TEST SET ---
+# --- STEP 3: SAVE THE LABELS FOR THE TEST SET ---
 print(f"\nCreating labels file: '{OUTPUT_LABELS_FILE}'")
 
 # Select only the image ID and the diagnosis code for our test set
 test_labels_df = test_df[['image_id', 'dx']].copy()
 
-# Optional: Add the full class name for readability
+#  Add the full class name for readability
 class_name_map = {
     'akiec': 'Actinic keratoses',
     'bcc': 'Basal cell carcinoma',
