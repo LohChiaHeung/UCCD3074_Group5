@@ -232,8 +232,8 @@ class SkinLesionClassifierApp:
         self.ground_truth_map = {}
         folder_name = os.path.basename(folder_path) # e.g., "my_test_set"
         
-        # --- NEW: Prioritize the specific labels file ---
-        # e.g., looks for "my_test_set_labels.csv"
+        # --- Prioritize the specific labels file ---
+        # looks for "my_test_set_labels.csv"
         specific_labels_file = f"{folder_name}_labels.csv"
 
         # List of potential file paths to check, in order of priority
